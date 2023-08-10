@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import com.example.case_study.CustomListCell?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Button?>
+
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.case_study.ClientController">
+
+  <left>
+    <ListView fx:id="left" />
+  </left>
+
+  <right>
+    <ListView fx:id="right" >
+
+    </ListView>
+  </right>
+
+  <bottom>
+    <HBox alignment="CENTER" prefHeight="30">
+      <TextField prefWidth="400" />
+      <Button onAction="#click" text="click" alignment="CENTER"/>
+    </HBox>
+  </bottom>
+</BorderPane>
